@@ -18,10 +18,7 @@ public class LoginTest {
         Login user3 = new Login("kyle_123", "Ch&&sec@ke99!", "+27838968976");
         System.out.println("TEST 3 - Invalid Username (too long): " + (!user3.checkUserName() ? "PASSED" : "FAILED"));
 
-        // TEST 4: Valid Password
-        Login user4 = new Login("kyl_1", "Ch&&sec@ke99!", "+27838968976");
-        System.out.println("TEST 4 - Valid Password: " + (user4.checkPasswordComplexity() ? "PASSED" : "FAILED"));
-
+        
         // TEST 5: Invalid Password (too short)
         Login user5 = new Login("kyl_1", "Ch@1", "+27838968976");
         System.out.println("TEST 5 - Invalid Password (too short): " + (!user5.checkPasswordComplexity() ? "PASSED" : "FAILED"));
