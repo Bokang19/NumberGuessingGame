@@ -17,7 +17,10 @@ public class LoginTest {
     }
 
     @Test
-    public void testSomeMethod() {
+    public void checkUsername() {
+        Login login = Login("kyle_1","Ch&&sec@ke99", "+27838968976" );
+        
+        assertTrue(login.checkUserName())
     }
     
 }
